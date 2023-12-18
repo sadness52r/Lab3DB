@@ -32,4 +32,3 @@ def RunQueries():
             connection.close()
         engine.dispose()
         return averageTimes
-

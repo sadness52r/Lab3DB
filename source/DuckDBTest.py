@@ -14,8 +14,7 @@ queries = [
 
 def RunQueries():
     averageTimes = []
-    try:
-        
+    try:   
         dck.execute("INSTALL sqlite")
         connection = dck.connect(pathDB)
         with connection.cursor() as cursor:

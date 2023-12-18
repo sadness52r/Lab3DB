@@ -32,4 +32,3 @@ def RunQueries():
         if con:
             con.close()
         return averageTimes
-

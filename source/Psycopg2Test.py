@@ -1,5 +1,6 @@
 from time import perf_counter
 from config import *
+
 queries = [
     """SELECT "VendorID", COUNT(*)
         FROM "TaxiDB" GROUP BY 1;""",
@@ -10,6 +11,7 @@ queries = [
     """SELECT "passenger_count", EXTRACT(year FROM "tpep_pickup_datetime"), ROUND("trip_distance"), COUNT(*)
        FROM "TaxiDB" GROUP BY 1, 2, 3 ORDER BY 2, 4 DESC;""",
 ]
+
 def RunQueries():
     averageTimes = []
     try:
